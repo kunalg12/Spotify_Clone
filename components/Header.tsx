@@ -83,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({
                     items-center
                 ">
                     <button
-                    className="
+                        className="
                     rounded-full
                     bg-white
                     p-2
@@ -95,9 +95,9 @@ const Header: React.FC<HeaderProps> = ({
                     >
                         <HiHome className="text-black" size={20} />
                     </button>
-                    
+
                     <button
-                    className="
+                        className="
                     rounded-full
                     bg-white
                     p-2
@@ -111,21 +111,42 @@ const Header: React.FC<HeaderProps> = ({
                     </button>
                 </div>
                 <div
-                className="
+                    className="
                 flex
                 justify-between
                 items-center
                 gap-x-4
                 ">
                     <>
-                    <div>
-                        <Button>
-                            Sign Up
-                        </Button>
-                    </div>
+                        <div>
+                            <Button
+                                onClick={() => {}}
+                                className="
+                        bg-transparent
+                        text-neutral-300
+                        font-medium
+                        "
+                            >
+                                Sign Up
+                            </Button>
+                        </div>
+                        <div>
+                            <Button
+                                onClick={() => {}}
+                                className="
+                        bg-white
+                        px-6
+                        py-2
+
+                        "
+                            >
+                                Log In
+                            </Button>
+                        </div>
                     </>
                 </div>
             </div>
+            {children}
         </div>
     );
 }

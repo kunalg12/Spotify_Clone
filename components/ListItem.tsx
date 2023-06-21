@@ -22,6 +22,7 @@ const ListItem: React.FC<ListItemProps> = ({
 
     return (
         <button
+        onClick={onclick}
             className="
         relative
         group
@@ -34,7 +35,8 @@ const ListItem: React.FC<ListItemProps> = ({
         hover:bg-neutral-100/10
         transition
         pr-4
-        ">
+        "
+        >
             <div
                 className="
             relative
@@ -64,9 +66,10 @@ const ListItem: React.FC<ListItemProps> = ({
                 p-2
                 drop-shadow-md
                 right-5
-                group-hover:opacity-110
+                group-hover:opacity-100
                 hover:scale-110
-                ">
+                "
+            >
                 <FaPlay className="text-black" />
             </div>
         </button>

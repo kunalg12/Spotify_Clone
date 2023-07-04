@@ -16,7 +16,8 @@ function ModalProvider() {
     }
   return (
     <>
-    <Modal/>
+    <Modal/>  
+    
     </>
   )
 }
